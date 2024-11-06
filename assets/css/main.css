@@ -547,7 +547,7 @@ h6 {
   margin-bottom: 5px;
 }
 
-.footer .footer-newsletter .newsletter-form {
+.footer .footer-updates .updates-form {
   margin-top: 30px;
   margin-bottom: 15px;
   padding: 6px 8px;
@@ -559,11 +559,11 @@ h6 {
   transition: 0.3s;
 }
 
-.footer .footer-newsletter .newsletter-form:focus-within {
+.footer .footer-updates .updates-form:focus-within {
   border-color: var(--accent-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type="email"] {
+.footer .footer-updates .updates-form input[type="email"] {
   border: 0;
   padding: 4px;
   width: 100%;
@@ -571,11 +571,11 @@ h6 {
   color: var(--default-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type="email"]:focus-visible {
+.footer .footer-updates .updates-form input[type="email"]:focus-visible {
   outline: none;
 }
 
-.footer .footer-newsletter .newsletter-form input[type="submit"] {
+.footer .footer-updates .updates-form input[type="submit"] {
   border: 0;
   font-size: 16px;
   padding: 0 20px;
@@ -586,7 +586,7 @@ h6 {
   border-radius: 0 4px 4px 0;
 }
 
-.footer .footer-newsletter .newsletter-form input[type="submit"]:hover {
+.footer .footer-updates .updates-form input[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
