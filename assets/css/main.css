@@ -810,7 +810,7 @@ section,
 
 .hero .carousel {
   width: 100%;
-  min-height: 60vh;
+  min-height: 40vh; /* Reduced height for desktop */
   padding: 0;
   margin: 0;
   background-color: var(--background-color);
@@ -873,9 +873,38 @@ section,
   animation: fadeInDown 1s both;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .hero h2 {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .carousel {
+    min-height: 30vh; 
+  }
+} */
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 24px; /* Smaller font size for mobile */
+    line-height: 1.4; /* Adjust line height for better spacing */
+    margin-bottom: 15px; /* Reduce margin below the heading */
+  }
+
+  .hero p {
+    font-size: 14px; /* Smaller font size for paragraph */
+    line-height: 1.6; /* Adjust line height */
+    margin-bottom: 20px; /* Add spacing below paragraph */
+  }
+
+  .hero .carousel-container {
+    inset: 30px 16px; /* Reduce padding inside the container */
+  }
+
+  .hero .btn-get-started {
+    font-size: 13px; /* Smaller button text */
+    padding: 6px 24px; /* Adjust button padding */
   }
 }
 
