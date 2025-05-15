@@ -50,16 +50,33 @@
       >
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/VV.jpg" alt="" />
+          <img src="assets/img/VV.webp" alt="" />
           <h1 class="sitename">விழிப்போம் விதைப்போம்</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/about.html">About Us</a></li>
             <li><a href="/initiatives.html">Initiatives</a></li>
-            <li><a href="/works.html">Our Works</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Our Works</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="/works.html">All Works</a></li>
+                <li>
+                  <a href="/career-development.html">
+                    Pallavaram Project
+                    <span
+                      style="color: green; font-size: 0.8rem; font-weight: bold"
+                      >*new*</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </li>
             <li class="dropdown">
               <a href="#"
                 ><span>Join Us</span>
@@ -76,7 +93,7 @@
               </ul>
             </li>
 
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/contact.html" class="active">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -149,7 +166,7 @@
 
             <div class="col-lg-6">
               <form
-                action="https://formspree.io/f/your_form_id"
+                action="https://formspree.io/f/xzzryyaz"
                 method="POST"
                 class="php-email-form"
                 data-aos="fade-up"
@@ -197,7 +214,15 @@
                   </div>
 
                   <div class="col-md-12 text-center">
-                    <div class="sent-message">
+                    <div class="loading" style="display: none">Loading...</div>
+                    <div
+                      class="error-message"
+                      style="display: none; color: red"
+                    ></div>
+                    <div
+                      class="sent-message"
+                      style="display: none; color: white"
+                    >
                       Your message has been sent. Thank you!
                     </div>
 
@@ -205,6 +230,50 @@
                   </div>
                 </div>
               </form>
+
+              <script>
+                const form = document.querySelector("form.php-email-form");
+
+                form.addEventListener("submit", async function (e) {
+                  e.preventDefault(); // prevent normal form submission
+
+                  // Hide messages & show loading
+                  form.querySelector(".error-message").style.display = "none";
+                  form.querySelector(".sent-message").style.display = "none";
+                  form.querySelector(".loading").style.display = "block";
+
+                  const formData = new FormData(form);
+
+                  try {
+                    const response = await fetch(form.action, {
+                      method: form.method,
+                      headers: { Accept: "application/json" },
+                      body: formData,
+                    });
+
+                    form.querySelector(".loading").style.display = "none";
+
+                    if (response.ok) {
+                      form.querySelector(".sent-message").style.display =
+                        "block";
+                      form.reset();
+                    } else {
+                      const data = await response.json();
+                      form.querySelector(".error-message").style.display =
+                        "block";
+                      form.querySelector(".error-message").innerText =
+                        data.error ||
+                        "Oops! There was a problem submitting your form.";
+                    }
+                  } catch (error) {
+                    form.querySelector(".loading").style.display = "none";
+                    form.querySelector(".error-message").style.display =
+                      "block";
+                    form.querySelector(".error-message").innerText =
+                      "Network error. Please try again later.";
+                  }
+                });
+              </script>
             </div>
 
             <!-- End Contact Form -->
@@ -284,7 +353,7 @@
             </p>
             <!-- Add Formspree id here -->
             <form
-              action="https://formspree.io/f/your_form_id"
+              action="https://formspree.io/f/xyzwllnr"
               method="POST"
               class="php-email-form"
             >

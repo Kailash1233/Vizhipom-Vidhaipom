@@ -53,16 +53,33 @@
       >
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/VV.jpg" alt="" />
+          <img src="assets/img/VV.webp" alt="" />
           <h1 class="sitename">விழிப்போம் விதைப்போம்</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/about.html">About Us</a></li>
             <li><a href="/initiatives.html">Initiatives</a></li>
-            <li><a href="/works.html">Our Works</a></li>
+            <li class="dropdown">
+              <a href="#" class="active"
+                ><span>Our Works</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="/works.html">All Works</a></li>
+                <li>
+                  <a href="/career-development.html">
+                    Pallavaram Project
+                    <span
+                      style="color: green; font-size: 0.8rem; font-weight: bold"
+                      >*new*</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </li>
             <li class="dropdown">
               <a href="#"
                 ><span>Join Us</span>
@@ -122,6 +139,7 @@
               <!-- <li data-filter=".filter-environment">Environment</li>
               <li data-filter=".filter-health">Health Camps</li> -->
               <li data-filter=".filter-education">Education</li>
+              <li data-filter=".filter-drive">Food Drives</li>
             </ul>
             <!-- End works Filters -->
 
@@ -130,18 +148,50 @@
               data-aos="fade-up"
               data-aos-delay="200"
             >
+              <!-- Pallavaram Community Development Drive -->
+              <div
+                class="col-lg-4 col-md-6 works-item isotope-item filter-education"
+              >
+                <div class="works-content h-100">
+                  <a
+                    href="assets/img/services/WP1.webp"
+                    data-gallery="works-gallery-education"
+                    class="glightbox"
+                  >
+                    <img
+                      src="assets/img/services/WP4.webp"
+                      class="img-fluid"
+                      alt="Education Drive"
+                    />
+                  </a>
+                  <div class="works-info">
+                    <h4>Community Development - <b>Pallavaram</b></h4>
+                    <p>
+                      Thrive, Ghetto! is a community development initiative
+                      empowering the Narikuravar community in Pallavaram through
+                      education, health, and hygiene awareness. Launched by
+                      Volunteer for India and supported by Vizhipom Vidhaipom,
+                      it includes tutoring, workshops, and cultural programs.
+                      From menstrual hygiene to street plays on social issues,
+                      the project sparks lasting impact. Together, we aim to
+                      uplift lives and foster community resilience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               <!-- Community Events Item -->
               <div
                 class="col-lg-4 col-md-6 works-item isotope-item filter-community"
               >
                 <div class="works-content h-100">
                   <a
-                    href="assets/img/services/Clothdrive.PNG"
+                    href="assets/img/services/Clothdrive.webp"
                     data-gallery="works-gallery-community"
                     class="glightbox"
                   >
                     <img
-                      src="assets/img/services/Clothdrive.PNG"
+                      src="assets/img/services/Clothdrive.webp"
                       class="img-fluid"
                       alt="Community Event"
                     />
@@ -153,16 +203,16 @@
                 </div>
               </div>
               <div
-                class="col-lg-4 col-md-6 works-item isotope-item filter-community"
+                class="col-lg-4 col-md-6 works-item isotope-item filter-drive"
               >
                 <div class="works-content h-100">
                   <a
-                    href="assets/img/services/4.jpg"
+                    href="assets/img/services/4.webp"
                     data-gallery="works-gallery-community"
                     class="glightbox"
                   >
                     <img
-                      src="assets/img/services/3.jpg"
+                      src="assets/img/services/4.webp"
                       class="img-fluid"
                       alt="Community Food Distribution"
                     />
@@ -178,16 +228,16 @@
               </div>
 
               <div
-                class="col-lg-4 col-md-6 works-item isotope-item filter-community"
+                class="col-lg-4 col-md-6 works-item isotope-item filter-drive"
               >
                 <div class="works-content h-100">
                   <a
-                    href="assets/img/services/1.jpg"
+                    href="assets/img/services/1.webp"
                     data-gallery="works-gallery-community"
                     class="glightbox"
                   >
                     <img
-                      src="assets/img/services/2.jpg"
+                      src="assets/img/services/2.webp"
                       class="img-fluid"
                       alt="Community Food Distribution"
                     />
@@ -210,12 +260,12 @@
               >
                 <div class="works-content h-100">
                   <a
-                    href="assets/img/works/app-1.jpg"
+                    href="assets/img/works/app-1.webp"
                     data-gallery="works-gallery-environment"
                     class="glightbox"
                   >
                     <img
-                      src="assets/img/works/app-1.jpg"
+                      src="assets/img/works/app-1.webp"
                       class="img-fluid"
                       alt="Tree Plantation"
                     />
@@ -238,12 +288,12 @@
               >
                 <div class="works-content h-100">
                   <a
-                    href="assets/img/works/app-1.jpg"
+                    href="assets/img/works/app-1.webp"
                     data-gallery="works-gallery-health"
                     class="glightbox"
                   >
                     <img
-                      src="assets/img/works/app-1.jpg"
+                      src="assets/img/works/app-1.webp"
                       class="img-fluid"
                       alt="Health Camp"
                     />
@@ -266,12 +316,12 @@
               >
                 <div class="works-content h-100">
                   <a
-                    href="assets/img/services/CG.jpg"
+                    href="assets/img/services/CG.webp"
                     data-gallery="works-gallery-education"
                     class="glightbox"
                   >
                     <img
-                      src="assets/img/services/CG.jpg"
+                      src="assets/img/services/CG.webp"
                       class="img-fluid"
                       alt="Education Drive"
                     />
@@ -287,12 +337,12 @@
               >
                 <div class="works-content h-100">
                   <a
-                    href="assets/img/services/WP2.jpg"
+                    href="assets/img/services/WP2.webp"
                     data-gallery="works-gallery-education"
                     class="glightbox"
                   >
                     <img
-                      src="assets/img/services/WP3.jpg"
+                      src="assets/img/services/WP3.webp"
                       class="img-fluid"
                       alt="Education Drive"
                     />
@@ -311,12 +361,12 @@
               >
                 <div class="works-content h-100">
                   <a
-                    href="assets/img/services/WP1.jpg"
+                    href="assets/img/services/WP1.webp"
                     data-gallery="works-gallery-education"
                     class="glightbox"
                   >
                     <img
-                      src="assets/img/services/WP4.jpg"
+                      src="assets/img/services/WP4.webp"
                       class="img-fluid"
                       alt="Education Drive"
                     />
@@ -326,6 +376,91 @@
                     <p>
                       Bringing life to walls with vibrant and meaningful
                       artwork.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 works-item isotope-item filter-drive"
+              >
+                <div class="works-content h-100">
+                  <a
+                    href="assets/img/services/CFD.webp"
+                    data-gallery="works-gallery-education"
+                    class="glightbox"
+                  >
+                    <img
+                      src="assets/img/services/CFD.webp"
+                      class="img-fluid"
+                      alt="Education Drive"
+                    />
+                  </a>
+                  <div class="works-info">
+                    <h4>Cooking and Food Drive</h4>
+                    <p>
+                      In the vibrant streets of Tambaram, Pallavaram,
+                      Medavakkam, and Madambakam, a quiet revolution has been
+                      unfolding every Sunday for the past three years. It begins
+                      in the early morning hours, as four dedicated cooking
+                      teams gather to prepare a simple yet nourishing meal of
+                      vegetable biryani.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 works-item isotope-item filter-drive"
+              >
+                <div class="works-content h-100">
+                  <a
+                    href="assets/img/services/CFD1.webp"
+                    data-gallery="works-gallery-education"
+                    class="glightbox"
+                  >
+                    <img
+                      src="assets/img/services/CFD1.webp"
+                      class="img-fluid"
+                      alt="Education Drive"
+                    />
+                  </a>
+                  <div class="works-info">
+                    <h4>Weekly Food Drive</h4>
+                    <p>
+                      With love, care, and hygiene as their guiding principles,
+                      these teams work tirelessly to fill 40 food packets, each
+                      one a testament to the power of compassion and community
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 works-item isotope-item filter-drive"
+              >
+                <div class="works-content h-100">
+                  <a
+                    href="assets/img/services/CFD2.webp"
+                    data-gallery="works-gallery-education"
+                    class="glightbox"
+                  >
+                    <img
+                      src="assets/img/services/CFD2.webp"
+                      class="img-fluid"
+                      alt="Education Drive"
+                    />
+                  </a>
+                  <div class="works-info">
+                    <h4>Weekly Food Drive</h4>
+                    <p>
+                      As the morning wears on, a separate team of volunteers
+                      takes charge, distributing these precious packets and
+                      water bottles to those who need it most - the homeless,
+                      the marginalized, and the forgotten. It's a small act of
+                      kindness, perhaps, but one that has brought hope and
+                      dignity to countless lives, and continues to inspire a
+                      growing community of volunteers and supporters.
                     </p>
                   </div>
                 </div>
@@ -413,7 +548,7 @@
             </p>
             <!-- Add Formspree id here -->
             <form
-              action="https://formspree.io/f/your_form_id"
+              action="https://formspree.io/f/xyzwllnr"
               method="POST"
               class="php-email-form"
             >
