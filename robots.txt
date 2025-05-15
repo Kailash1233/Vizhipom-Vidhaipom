@@ -1,0 +1,6 @@
+# robots.txt for https://www.vizhipomvidhaipom.in
+
+User-agent: *
+Disallow:
+
+Sitemap: https://www.vizhipomvidhaipom.in/sitemap.xml
